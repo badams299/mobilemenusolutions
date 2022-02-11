@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Styled For You",
+    "description": "Our mobile app can be customized to fit your restaurant’s look and feel.",
+    "image": {
+      "url": "images/features/store.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Easy Filtering",
+    "description": "Give customers a better menu browsing experience. Our menus allow customers to quickly navigate all the items you have to offer. Customers can easily filter items based on dietary preferences.",
+    "image": {
+      "url": "images/features/filter.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Contactless QR Menu",
+    "description": "Give customers access to your menu with a scan of from their phones. Our apps are built with App Clips and Google Play Instant so that customers can view your app right from their table. No searching the App Store is required.",
+    "image": {
+      "url": "images/features/qr_code.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+    {
+    "title": " Online Portal",
+    "description": "Our easy to use online portal allows you to add or edit menu items that will show to your customers instantly. Tag items with dietary preferences that will be highlighted to customers. Set schedules for daily specials",
+    "image": {
+      "url": "images/features/computer.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Accessibility",
+    "description": "Give all customers the ability to discover what’s on your menu. Mobile apps give customers the ability to use the app in a way that’s best for them. They are able to increase the font size, use screen readers, and other accessibility features.",
+    "image": {
+      "url": "images/features/accessibility.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Newest Technology",
+    "description": "By using Kotlin Multiplatform Mobile Technology, we can accelerate the development time of iPhone and Android app creation.",
+    "image": {
+      "url": "images/features/kotlin_logo.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

@@ -1,0 +1,111 @@
+---
+layout: default
+bodyClass: "page-home"
+---
+
+<div class="intro">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        {{ content }}
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="strip">
+    <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+        <div class="service-content">
+            <p style="font-size: 1.2rem; line-height: 2;">Mobile Menu Solutions is here to provide your customers with a better contactless menu experience while providing you with a new way to edit and update your restaurant’s menu. This is done through the use of mobile apps. Mobile apps provide a better overall customer experience over other solutions like PDFs. We offer a mobile app that can be customized to match your companies needs and that provides the best experience for your customers. </p>
+        </div>
+    </div>
+</div>
+
+{% if site.data.features %}
+<div class="strip strip-grey">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-center">
+
+      {% for feature in site.data.features %}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <div class="feature">
+          {% if feature.image %}
+          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
+          {% endif %}
+          <h2 class="feature-title">{{ feature.title }}</h2>
+          <div class="feature-content">{{ feature.description }}</div>
+        </div>
+      </div>
+      {% endfor %}
+         <div class="col-lg-12 col-lg-6 mb-2">
+        <div class="feature">
+          {% if feature.image %}
+          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
+          {% endif %}
+          <h2 class="feature-title">Not Everything You Were Looking For?</h2>
+          <div class="feature-content">Start with a basic menu and work with us to Add Features that can improve your business and customer’s experience. Rewards, events, or POS integration. Work with us to see if those can be a possibility.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<div class="strip">
+    <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-lg-6 mb-2">
+            <p style="font-size: 1.2rem; line-height: 2;">
+            Our experienced mobile developers are ready to help create an enjoyable experience for your customers. They have many years of industry experience creating scalable mobile apps. Developers stay up to date on the latest technologies and mobile trends, so that they can make a big impact on your business.
+            </p>
+            </div>
+        </div>
+        
+        <form style="padding: 20px;border-style: solid;border-radius: 16px; border-color: #c4c4c4;"id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xrgjpjre" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-lg-6 mb-2">
+                        <h2 style="text-align: center;">Work With Us</h2>
+                    </div>
+                </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-lg-6 mb-2">
+                 <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-lg-6 mb-2">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-lg-6 mb-2">
+                <label for="telephone">Phone Number (Optional)</label>
+                <input type="telephone" name="telephone" id="telephone" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-lg-6 mb-2">
+                 <label for="full-name">Restaurant Name</label>
+                 <input type="text" name="name" id="full-name" placeholder="Restaurant Name" required="">
+                </div>
+            </div>
+            <input type="hidden" name="_subject" id="email-subject" value="New Potential Client">
+            <div class="row justify-content-center">
+            <div class="col-lg-8 col-lg-6 mb-2">
+                <input type="submit" value="SUBMIT">
+            </div>
+            </div>
+            </fieldset>       
+    </form>  
+    </div>
+</div>
