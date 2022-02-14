@@ -19,7 +19,7 @@
   },
   {
     "title": "Contactless QR Menu",
-    "description": "Give customers access to your menu with a scan of from their phones. Our apps are built with App Clips and Google Play Instant so that customers can view your app right from their table. No searching the App Store is required.",
+    "description": "Give customers access to your menu with a scan of from their phones. Our apps are built with <a href='https://developer.apple.com/app-clips/'>App Clips</a> and <a href='https://developer.android.com/topic/google-play-instant'>Google Play Instant</a> so that customers can view your app right from their table. No searching the App Store is required.",
     "image": {
       "url": "images/features/qr_code.svg",
       "width": 80,
